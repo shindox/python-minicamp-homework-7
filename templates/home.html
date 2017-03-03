@@ -26,9 +26,25 @@
 		<h2>Posts:</h2>
 
 		<ul id="post-list">
-			
+
 		</ul>
 
+		<script id="post-template" type="text/post-template">
+			<li>
+				<h3 class="title"></h3>
+				<h4 class="author"></h4>
+				<p class="body"></p>
+				Likes:<span class="likes">0</span>
+				<br>
+				<button class="like-button">Like</button>
+				<button class="remove-post">Delete</button>
+			</li>
+		</script>
+
+		<script
+		  src="https://code.jquery.com/jquery-3.1.1.js"
+		  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+		  crossorigin="anonymous"></script>
 		<script src="/static/scripts/script.js"></script>
 	</body>
 </html>

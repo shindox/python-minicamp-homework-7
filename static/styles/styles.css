@@ -1,3 +1,15 @@
 body {
   background: whitesmoke;
 }
+
+#post-list {
+  visibility: hidden;
+}
+
+.title {
+  visibility: visible;;
+}
+
+li {
+  list-style-type:none
+}

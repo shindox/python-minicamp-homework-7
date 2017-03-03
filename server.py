@@ -44,9 +44,19 @@ def likePost(post_id):
     connection = sqlite3.connect('database.db')
     cursor = connection.cursor()
 
-    cursor.execute('UPDATE posts SET likes=likes + 1 WHERE id=?', (post_id))
+    cursor.execute('UPDATE posts SET likes=likes + 1 WHERE id="'+post_id+'"')
     connection.commit()
     connection.close()
     return post_id + ' successfully updated'
+
+@app.route('/delete/<post_id>')
+def deletePost(post_id):
+    connection = sqlite3.connect('database.db')
+    cursor = connection.cursor()
+
+    cursor.execute('DELETE FROM posts WHERE id="'+post_id+'"')
+    connection.commit()
+    connection.close()
+    return post_id + ' successfully removed'
 
 app.run(debug = True)
