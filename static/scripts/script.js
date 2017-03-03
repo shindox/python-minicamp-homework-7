@@ -29,10 +29,10 @@ function populatePosts() {
        });
      });
      $(newPost).find('.title').on('click', function visToggle(){
-       if ($(newPost).css('visibility') == 'hidden') {
-         $(newPost).css('visibility','visible');
+       if ($(newPost).find('.hide').css('display') == 'none') {
+         $(newPost).find('.hide').css('display','block');
        } else {
-         $(newPost).css('visibility','hidden');
+         $(newPost).find('.hide').css('display','none');
        }
       });
     });
