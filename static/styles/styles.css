@@ -25,16 +25,18 @@ button {
   cursor: pointer;
 }
 
+button:hover {
+  background-color: #4CAF50;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 .like-button:hover {
   background-color: #4CAF50;
   color: blue;
-  font-size: 18px;
-  font-weight: bold;
 }
 
 .remove-post:hover {
   background-color: #4CAF50;
   color: red;
-  font-size: 18px;
-  font-weight: bold;
 }
